@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keyword"
+      content="planetry planet planetary planet weight calculator mars jupiter venus mercury earth"
+    />
+    <meta
+      name="description"
+      content="Have you ever wondered how much you weigh on other planets? Try out our Planetry Weight Calculator to find out...Try calculating it on jupiter."
+    />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="google-site-verification"
+      content="J9KGo7Ua9CcM8tKv5Qf8zdfx83GbXkTVfST_6-WdRgc"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Planetry - The planet weight calculator</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <!-- Header and navigation -->
+    <header>
+      <nav class="container flex">
+        <div class="logo flex">
+          <h1 class="text">Earth</h1>
+          <div class="sub-text">The blue planet</div>
+        </div>
+        <div class="flex-100"></div>
+        <div class="input flex">
+          <input
+            type="number"
+            placeholder="Weight"
+            min="0"
+            step="1"
+            max="9999"
+            id="input-weight"
+          />
+          <select name="wght-type" id="wght-type">
+            <option value="kg">Kg</option>
+            <option value="lbs">Lbs</option>
+          </select>
+        </div>
+        <button class="nav-trigger flex" id="nav-trigger-btn">
+          <div class="nav-line"></div>
+          <div class="nav-line"></div>
+        </button>
+      </nav>
+    </header>
+    <!-- Body -->
+   
+          <div class="card-expand">
+            <div class="flex justify-end">
+              <div class="weight-display">
+                <div class="inline" id="weight-result">0</div>
+                <div class="text-small inline" id="weight-result-type">kg</div>
+              </div>
+                <div class="icon">
+                
+
+      
+      <!-- Planet box -->
+      <div class="planet-box">
+        <div class="planet-list">
+          <button
+            class="planet-checkbox"
+            style="
+              --planet-clr-a: var(--mercury-clr-la);
+              --planet-clr-b: var(--mercury-clr-l);
+            "
+          >
+            <div class="label">Mercury</div>
+          </button>
+          <button
+            class="planet-checkbox"
+            style="
+              --planet-clr-a: var(--venus-clr-la);
+              --planet-clr-b: var(--venus-clr-l);
+            "
+          >
+            <div class="label">Venus</div>
+          </button>
+          <button
+            class="planet-checkbox active"
+            style="
+              --planet-clr-a: var(--earth-clr-la);
+              --planet-clr-b: var(--earth-clr-l);
+            "
+          >
+            <div class="label">Earth</div>
+          </button>
+          <button
+            class="planet-checkbox"
+            style="
+              --planet-clr-a: var(--mars-clr-la);
+              --planet-clr-b: var(--mars-clr-l);
+            "
+          >
+            <div class="label">Mars</div>
+          </button>
+          <button
+            class="planet-checkbox"
+            style="
+              --planet-clr-a: var(--jupiter-clr-la);
+              --planet-clr-b: var(--jupiter-clr-l);
+            "
+          >
+            <div class="label">Jupiter</div>
+          </button>
+          <button
+            class="planet-checkbox"
+            style="
+              --planet-clr-a: var(--saturn-clr-la);
+              --planet-clr-b: var(--saturn-clr-l);
+            "
+          >
+            <div class="label">Saturn</div>
+          </button>
+          <button
+            class="planet-checkbox"
+            style="
+              --planet-clr-a: var(--uranus-clr-la);
+              --planet-clr-b: var(--uranus-clr-l);
+            "
+          >
+            <div class="label">Uranus</div>
+          </button>
+          <button
+            class="planet-checkbox"
+            style="
+              --planet-clr-a: var(--neptune-clr-la);
+              --planet-clr-b: var(--neptune-clr-l);
+            "
+          >
+            <div class="label">Neptune</div>
+          </button>
+        </div>
+        <div class="planet-image">
+          <img src="./planets/earth.png" alt="planet-image" />
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer></footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!-- 712 and 780 -->
