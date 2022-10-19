@@ -1,0 +1,278 @@
+:root {
+  --accent-clr: #a56b07;
+  --accent-clr-hover: #8c5b07;
+  --accent-clr-focus: #483006;
+  --accent-clr-active: #573a09;
+  --accent-clr-a: rgba(165, 107, 7, 0.3);
+  --accent-clr-l: #ffa200;
+}
+
+html {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap");
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 35rem;
+  padding: 15rem 0;
+  border-bottom-left-radius: 60%;
+  box-shadow: 0 0 0 10px var(--accent-clr);
+  background: linear-gradient(rgba(22, 22, 22, 0.95), rgba(22, 22, 22, 0.6)),
+    url("https://i.postimg.cc/hPzzpG0m/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-family: "Varela Round";
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  background-color: var(--accent-clr-a);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+.btn {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: "Varela Round";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.btn-primary {
+  border-color: var(--accent-clr) !important;
+  background-color: var(--accent-clr) !important;
+  color: var(--accent-clr);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-clr-hover) !important;
+}
+
+.btn-primary:focus {
+  background-color: var(--accent-clr-focus) !important;
+  color: white !important;
+}
+
+.btn-primary:active {
+  background-color: var(--accent-clr-active) !important;
+}
+
+.about-section p {
+  margin-bottom: 5rem;
+}
+
+.projects-section {
+  padding: 10rem 0;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 1rem;
+    border-left: 0.5rem solid #781c2e;
+  }
+}
+
+.projects-section .project-text {
+  padding: 1rem;
+  font-size: 90%;
+}
+.container {
+  width: 300px;
+}
+
+p {
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 25px;
+}
+h2 {
+  padding-top: 10%;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #781c2e;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
+.jumbotron {
+  background-color: black;
+  color: #fff;
+  padding: 100px 25px;
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+.bg-grey {
+  background-color: #f6f6f6;
+}
+.logo-small {
+  color: black;
+  font-size: 50px;
+}
+.logo {
+  color: black;
+  font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+#bio {
+  font-family: "Cinzel Decorative", cursive;
+  padding: 50px;
+  text-align: center;
+}
+.container {
+  height: 100px;
+}
+
+/* MY styles */
+.super-btn {
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 0.4rem 0.2rem;
+  margin: 0;
+  margin-left: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--accent-clr);
+  background-color: transparent;
+  transition: all 200ms ease-in;
+}
+
+.nav-item:has(.super-btn) {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.super-btn:hover {
+  box-shadow: 0 0 2px 5px var(--accent-clr-a);
+}
+.super-btn:hover .nav-link {
+  color: var(--accent-clr-l) !important;
+}
+.super-btn .nav-link {
+  color: whitesmoke !important;
+  padding: 0;
+  margin: 0;
+  display: block;
+  transition: all 400ms ease-in;
+}
+
+.nav-transparent {
+  background-color: transparent !important;
+  height: 120px;
+}
+.nav-clr {
+  background-color: #363737 !important;
+  height: 70px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+.navbar {
+  transition: 100ms ease;
+}
+.flex {
+  display: flex;
+}
+.half-width {
+  width: 50%;
+}
+.spacer {
+  height: 70px;
+}
+.align-center {
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.grow {
+  flex-grow: 1;
+}
+
+.searchList li {
+  padding: 10px;
+  transition: 200ms ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.searchList:not(:empty) {
+  list-style: none;
+  padding: 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.searchList a {
+  text-decoration: none !important;
+}
+.searchList li:hover {
+  background-color: var(--accent-clr-a) !important;
+  color: var(--accent-clr);
+}
+.searchList li:last-child {
+  border-color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid .grid-item > img {
+  background-color: whitesmoke;
+  object-fit: cover;
+}
+.grid .grid-items {
+  background-color: red;
+}
+.no {
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh;
+}
+.no > h2 {
+  margin: 0;
+  padding: 0;
+}
+.floating {
+  background-color: whitesmoke;
+  position: absolute !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  margin-right: 1rem !important;
+}
