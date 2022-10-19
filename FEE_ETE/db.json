@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "Anshul",
+      "username": "kk",
+      "email": "anshul12@chitkara.edu.in",
+      "phone": "9780712234",
+      "website": "kk",
+      "id": 1
+    },
+    {
+      "name": "Katoch",
+      "username": "kzl",
+      "email": "ritika2052.be20@chitkara.edu.in",
+      "phone": "9782362922",
+      "website": "lz",
+      "id": 2
+    },
+    {
+      "name": "Gurbakshish Singh",
+      "username": "abc",
+      "email": "gurbakshish0851.be20@chitkara.edu.in",
+      "phone": "9782362922",
+      "website": "pqr",
+      "id": 3
+    }
+  ]
+}
